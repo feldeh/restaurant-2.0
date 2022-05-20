@@ -35,29 +35,34 @@
     </p>
   </div>
 
-  <div class="jumbotron text-center d-flex justify-content-evenly" style="background-image: url(img/img-chef.jpg); background-size: cover; height:100vh;">
+  <div class="jumbotron text-center d-flex align-items-center" style="background-image: url(img/img-chef.jpg); background-size: cover; height:100vh;"> <!-- align-item-center to center row on y axis -->
 
   
-    <div class="row align-items-center ">
+    <div class="row w-100 justify-content-center"> <!-- w-100 to make row full width | justify-content-center to center col on x axis -->
       
       <!-- Press Panel -->
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+      <div class="col d-flex justify-content-center"> <!-- d-flex to display flex on col | justify-content-center to center card on x axis -->
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
         </div>
+
       </div>
       <!-- News Panel -->
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+      <div class="col d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
         </div>
       </div>
 
