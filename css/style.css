@@ -13,6 +13,11 @@
   margin: 0 auto;
 }
 
+#mapBro, #mapBru, #mapBer {
+  height: 400px;
+  width: 100%;
+}
+
 /*
 // Boostrap Gallery Isotope pagination        https://codepen.io/amrithraj151/pen/VEmXZX
 
