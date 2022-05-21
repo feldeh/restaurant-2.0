@@ -10,6 +10,8 @@ function initMapBro() {
     const mapBro = new google.maps.Map(document.getElementById("mapBro"), {
         zoom: 17,
         center: brooklyn,
+        mapId: "eee49869aea10cac",
+        disableDefaultUI: true,
     });
     const markerBro = new google.maps.Marker({
         position: brooklyn,
@@ -23,6 +25,8 @@ function initMapBru() {
     const mapBru = new google.maps.Map(document.getElementById("mapBru"), {
         zoom: 17,
         center: brussels,
+        mapId: "eee49869aea10cac",
+        disableDefaultUI: true,
     });
     const markerBru = new google.maps.Marker({
         position: brussels,
@@ -35,6 +39,8 @@ function initMapBer() {
     const mapBer = new google.maps.Map(document.getElementById("mapBer"), {
         zoom: 17,
         center: berlin,
+        mapId: "eee49869aea10cac",
+        disableDefaultUI: true,
     });
     const markerBer = new google.maps.Marker({
         position: berlin,
