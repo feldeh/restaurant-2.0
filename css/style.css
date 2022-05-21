@@ -18,6 +18,14 @@
   width: 600px;
 }
 
+.section-title {
+  margin: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-bottom: 2px solid;
+}
+
 /*
 // Boostrap Gallery Isotope pagination        https://codepen.io/amrithraj151/pen/VEmXZX
 
