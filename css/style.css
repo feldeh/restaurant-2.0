@@ -1,3 +1,7 @@
+* {
+  scrollbar-color: red;
+}
+
 .jumbotron {
   background-attachment: fixed;
   background-position: center;
