@@ -35,17 +35,17 @@
   </nav>
 
 
-
+<div class="container">
   <div class="row mt-5">
     <div class="col d-flex justify-content-center">
-      <div class="card rounded-0 text-center w-50" style="width: 18rem;">
+      <div class="card card-menu rounded-0 text-center w-50" style="width: 18rem;">
         <div class="card-body">
           <h1 class="card-title mb-5">/\ <br> Mt <br> Foodji</h1>
-          <h4 class="mb-2 mt-5">Address NY</h4>
+          <p class="mb-2 mt-5">C34 N 5th St, Brooklyn</p>
           <hr class="address-divider w-50">
-          <h4 class="mb-2">Address BXL</h4>
+          <p class="mb-2">Cantersteen 10, Brussels</p>
           <hr class="address-divider w-50">
-          <h4 class="mb-5">Address BER</h4>
+          <p class="mb-5">Skalitzer Str. 135, Berlin</p>
         </div>
       </div>
     </div>
@@ -59,15 +59,15 @@
 
   <div class="row mt-5 mb-5">
     <div class="col d-flex justify-content-center">
-      <div class="card rounded-0 w-50" style="width: 18rem;">
+      <div class="card card-menu rounded-0 w-50" style="width: 18rem;">
         <div class="card-body">
           <h2 class="text-center">Drinks</h2>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-            <li class="list-group-item">A fourth item</li>
-            <li class="list-group-item">And a fifth one</li>
+            <li class="list-group-item list-group-item-menu bg-transparent">An item</li>
+            <li class="list-group-item list-group-item-menu bg-transparent">A second item</li>
+            <li class="list-group-item list-group-item-menu bg-transparent">A third item</li>
+            <li class="list-group-item list-group-item-menu bg-transparent">A fourth item</li>
+            <li class="list-group-item list-group-item-menu bg-transparent">And a fifth one</li>
           </ul>
         </div>
       </div>
@@ -76,15 +76,15 @@
 
   <div class="row mt-5 mb-5">
     <div class="col d-flex justify-content-center">
-      <div class="card rounded-0 w-50" style="width: 18rem;">
+      <div class="card card-menu rounded-0 w-50" style="width: 18rem;">
         <div class="card-body">
           <h2 class="text-center">Main</h2>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-            <li class="list-group-item">A fourth item</li>
-            <li class="list-group-item">And a fifth one</li>
+          <ul class="list-group bg-transparent list-group-flush">
+            <li class="list-group-item list-group-item-menu bg-transparent">An item</li>
+            <li class="list-group-item list-group-item-menu bg-transparent">A second item</li>
+            <li class="list-group-item list-group-item-menu bg-transparent">A third item</li>
+            <li class="list-group-item list-group-item-menu bg-transparent">A fourth item</li>
+            <li class="list-group-item list-group-item-menu bg-transparent">And a fifth one</li>
           </ul>
         </div>
       </div>
@@ -93,20 +93,21 @@
 
   <div class="row mt-5 mb-5">
     <div class="col d-flex justify-content-center">
-      <div class="card rounded-0 w-50" style="width: 18rem;">
+      <div class="card card-menu rounded-0 w-50" style="width: 18rem;">
         <div class="card-body">
           <h2 class="text-center">Desserts</h2>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-            <li class="list-group-item">A fourth item</li>
-            <li class="list-group-item">And a fifth one</li>
+            <li class="list-group-item list-group-item-menu bg-transparent">An item</li>
+            <li class="list-group-item list-group-item-menu bg-transparent">A second item</li>
+            <li class="list-group-item list-group-item-menu bg-transparent">A third item</li>
+            <li class="list-group-item list-group-item-menu bg-transparent">A fourth item</li>
+            <li class="list-group-item list-group-item-menu bg-transparent">And a fifth one</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
+</div>
 
   
 
@@ -122,7 +123,7 @@
       var scroll_pos = 0;
       $(document).scroll(function () {
         scroll_pos = $(this).scrollTop();
-        if (scroll_pos > 210) {
+        if (scroll_pos > 100) {
           $("#nav").css('background-color', 'rgba(0, 0, 0, 0.7)');
           $("#nav a").css('color', 'white');
         } else {
