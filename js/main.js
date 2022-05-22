@@ -48,10 +48,10 @@ function initMapBer() {
     });
 }
 
-function loadmaps(){
-        initMapBru();
-        initMapBro();
-        initMapBer();  
+function loadmaps() {
+    initMapBru();
+    initMapBro();
+    initMapBer();
 }
 
 window.loadmaps();
