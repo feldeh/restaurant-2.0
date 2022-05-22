@@ -5,6 +5,10 @@
 
 
 
+
+
+
+
 function initMapBro() {
     const brooklyn = { lat: 40.7183187, lng: -73.9635749 };
     const mapBro = new google.maps.Map(document.getElementById("mapBro"), {
@@ -56,11 +60,7 @@ function loadmaps() {
 
 window.loadmaps();
 
-$('#nav').affix({
-    offset: {
-      top: $('#services').offset().top
-    }
-});	
+
 
 
 
