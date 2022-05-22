@@ -17,7 +17,7 @@
 
 
 
-  <nav id="nav" class="navbar navbar-default navbar-expand-lg sticky-top">
+  <nav id="nav" class="navbar navbar-default navbar-expand-md sticky-top">
     <div class="container">
       <a class="navbar-brand fs-2" href="#">Mt Foodji
         <!-- <img src="" alt=""> -->
@@ -27,7 +27,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
-        <div class="navbar-nav ms-lg-auto text-center">
+        <div class="navbar-nav ms-md-auto text-center">
           <a class="nav-item nav-link active fs-3  pt-0 " href="#">Home</a>
           <a class="nav-item nav-link active fs-3 pt-0 " href="#">Menu</a>
           <a class="nav-item nav-link active fs-3 pt-0 " href="#">Gallery</a>
@@ -60,10 +60,10 @@
         <div class="card card-panel" style="width: 20rem; box-sizing: border-box;">
           <div class="card-body">
             <h1 class="card-title mb-4">Press</h1>
-            <h5 class="card-subtitle mb-2">Press Title</h5>
+            <h5 class="card-subtitle mb-2">Press title</h5>
             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsum libero vitae</p>
             <a class="card-link btn btn-dark mb-5" href="#" role="button">More Info</a>
-            <h5 class="card-subtitle mb-2 pb">Press Title</h5>
+            <h5 class="card-subtitle mb-2 pb">Press title</h5>
             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsum libero vitae</p>
             <a class="card-link btn btn-dark mb-5" href="#" role="button">More Info</a>
           </div>
@@ -75,10 +75,10 @@
         <div class="card card-panel" style="width: 20rem; box-sizing: border-box;">
           <div class="card-body">
             <h1 class="card-title mb-4">Events</h1>
-            <h5 class="card-subtitle mb-2">Event Title</h5>
+            <h5 class="card-subtitle mb-2">Event title</h5>
             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsum libero vitae</p>
             <a class="card-link btn btn-dark mb-5" href="#" role="button">More Info</a>
-            <h5 class="card-subtitle mb-2 pb">Event Title</h5>
+            <h5 class="card-subtitle mb-2 pb">Event title</h5>
             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsum libero vitae</p>
             <a class="card-link btn btn-dark mb-5" href="#" role="button">More Info</a>
           </div>
@@ -100,7 +100,7 @@
         var scroll_pos = 0;
         $(document).scroll(function () {
           scroll_pos = $(this).scrollTop();
-          if (scroll_pos > 210) {
+          if (scroll_pos > 100) {
             $("#nav").css('background-color', 'rgba(0, 0, 0, 0.7)');
             $("#nav a").css('color', 'white');
           } else {

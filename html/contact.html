@@ -51,11 +51,11 @@
           <h2 class="pb-3 border-bottom">Contact Us</h2>
           <div class="row mb-3 pt-4">
             <div class="col">
-              <label for="firstName" class="form-label">First name</label>
+              <label for="firstName" class="form-label">First&nbsp;name</label>
               <input type="text" class="form-control" id="firstName" aria-describedby="firstNameHelp">
             </div>
             <div class="col">
-              <label for="exampleInputPassword1" class="form-label">Last name</label>
+              <label for="exampleInputPassword1" class="form-label">Last&nbsp;name</label>
               <input type="text" class="form-control" id="lastName" aria-describedby="lastNameHelp">
             </div>
           </div>
@@ -95,8 +95,8 @@
       var scroll_pos = 0;
       $(document).scroll(function () {
         scroll_pos = $(this).scrollTop();
-        if (scroll_pos > 210) {
-          $("#nav").css('background-color', 'rgba(0, 0, 0, 0.7)');
+        if (scroll_pos > 100) {
+          $("#nav").css('background-color', 'rgba(0, 0, 0, 0.8)');
           $("#nav a").css('color', 'white');
         } else {
           $("#nav").css('background-color', 'transparent');

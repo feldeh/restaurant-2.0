@@ -14,7 +14,34 @@ header.hero {
 #mapBru,
 #mapBer {
   height: 400px;
-  width: 600px;
+  width: 500px;
+}
+
+@media screen and (max-width: 992px) {
+  #mapBro,
+  #mapBru,
+  #mapBer {
+    height: 300px;
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #mapBro,
+  #mapBru,
+  #mapBer {
+    height: 300px;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #mapBro,
+  #mapBru,
+  #mapBer {
+    height: 300px;
+    width: 250px;
+  }
 }
 
 .section-title {
