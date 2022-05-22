@@ -56,6 +56,12 @@ function loadmaps() {
 
 window.loadmaps();
 
+$('#nav').affix({
+    offset: {
+      top: $('#services').offset().top
+    }
+});	
+
 
 
 

@@ -18,6 +18,24 @@
 }
 
 
+
+header.hero {
+  height: 100vh;
+
+}
+
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  top: 0;
+  left: 0;
+}
+
 .address-divider {
   margin: 0 auto;
 }
