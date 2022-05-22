@@ -4,16 +4,15 @@
 
 .jumbotron {
   background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .address-divider {
   margin: 0 auto;
 }
 
-#mapBro, #mapBru, #mapBer {
+#mapBro,
+#mapBru,
+#mapBer {
   height: 400px;
   width: 600px;
 }
