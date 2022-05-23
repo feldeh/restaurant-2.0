@@ -1,3 +1,7 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
 .jumbotron {
   background-attachment: fixed;
   -webkit-box-sizing: border-box;
@@ -97,4 +101,8 @@ header.hero {
 
 * {
   max-width: 100vw;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.5);
 }

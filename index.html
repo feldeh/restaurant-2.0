@@ -7,6 +7,8 @@
   <title>Mt Foodji</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -56,16 +58,13 @@
       <!-- w-100 to make row full width | justify-content-center to center col on x axis -->
 
       <!-- Press Panel -->
-      <div class="col d-flex justify-content-center mb-5" style="overflow-y: auto; ">
+      <div class="col col-card d-flex justify-content-center mb-5" style="overflow-y: auto; ">
         <div class="card card-panel" style="width: 20rem; box-sizing: border-box;">
+          <img src="/img/img-ramen.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h1 class="card-title mb-4">Press</h1>
-            <h5 class="card-subtitle mb-2">Press title</h5>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsum libero
-              vitae</p>
-            <a class="card-link btn btn-dark mb-5" href="#" role="button">More Info</a>
-            <h5 class="card-subtitle mb-2 pb">Press title</h5>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsum libero
+            <h5 class="card-subtitle mb-2">News</h5>
+            <p class="card-text text-start">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsum
+              libero
               vitae</p>
             <a class="card-link btn btn-dark mb-5" href="#" role="button">More Info</a>
           </div>
@@ -74,17 +73,15 @@
       </div>
       <!-- News Panel -->
       <div class="col d-flex justify-content-center mb-5" style="overflow-y: auto; ">
-        <div class="card card-panel" style="width: 20rem; box-sizing: border-box;">
+        <div class="card col-card card-panel" style="width: 20rem; box-sizing: border-box;">
+          <img src="/img/img-ramen.jpg" class="card-img-top " alt="...">
           <div class="card-body">
-            <h1 class="card-title mb-4">Events</h1>
-            <h5 class="card-subtitle mb-2">Event title</h5>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsum libero
+            <h5 class="card-subtitle mb-2">Event</h5>
+            <p class="card-text text-start">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsum
+              libero
               vitae</p>
             <a class="card-link btn btn-dark mb-5" href="#" role="button">More Info</a>
-            <h5 class="card-subtitle mb-2 pb">Event title</h5>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsum libero
-              vitae</p>
-            <a class="card-link btn btn-dark mb-5" href="#" role="button">More Info</a>
+
           </div>
         </div>
 
@@ -93,21 +90,19 @@
     </div>
   </div>
 
-  <footer class="bg-dark text-light">
-    <div class="row justify-content-center">
-      <div class="col">
 
-      </div>
-      <div class="col">
-
-        <ul class="footer-list">
-          <li><a href="/terms">Terms</a></li>
-          <li><a href="/privacy">Privacy policy</a></li>
-          <li><a href="/faq">FAQ</a></li>
-        </ul>
-      </div>
-      <div class="col">
-
+  <footer class="bg-dark">
+    <div class="d-flex justify-content-center justify-content-lg-between p-4 social-media">
+      <div>
+        <a target="_blank" href="https://www.facebook.com/" class="btn btn-outline-primary rounded-3 me-4">
+          <i class="fa fa-facebook-f"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/" class="btn btn-outline-primary rounded-3 me-4">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com" class="btn btn-outline-danger rounded-3 me-4">
+          <i class="fa fa-instagram"></i>
+        </a>
       </div>
     </div>
   </footer>
