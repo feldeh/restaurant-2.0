@@ -61,10 +61,12 @@
           <div class="card-body">
             <h1 class="card-title mb-4">Press</h1>
             <h5 class="card-subtitle mb-2">Press title</h5>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsum libero vitae</p>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsum libero
+              vitae</p>
             <a class="card-link btn btn-dark mb-5" href="#" role="button">More Info</a>
             <h5 class="card-subtitle mb-2 pb">Press title</h5>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsum libero vitae</p>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsum libero
+              vitae</p>
             <a class="card-link btn btn-dark mb-5" href="#" role="button">More Info</a>
           </div>
         </div>
@@ -76,10 +78,12 @@
           <div class="card-body">
             <h1 class="card-title mb-4">Events</h1>
             <h5 class="card-subtitle mb-2">Event title</h5>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsum libero vitae</p>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsum libero
+              vitae</p>
             <a class="card-link btn btn-dark mb-5" href="#" role="button">More Info</a>
             <h5 class="card-subtitle mb-2 pb">Event title</h5>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsum libero vitae</p>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto optio ipsum libero
+              vitae</p>
             <a class="card-link btn btn-dark mb-5" href="#" role="button">More Info</a>
           </div>
         </div>
@@ -87,29 +91,48 @@
       </div>
 
     </div>
+  </div>
 
+  <footer class="bg-dark text-light">
+    <div class="row justify-content-center">
+      <div class="col">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      </div>
+      <div class="col">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
-    <script>
-      $(document).ready(function () {
-        var scroll_pos = 0;
-        $(document).scroll(function () {
-          scroll_pos = $(this).scrollTop();
-          if (scroll_pos > 100) {
-            $("#nav").css('background-color', 'rgba(0, 0, 0, 0.7)');
-            $("#nav a").css('color', 'white');
-          } else {
-            $("#nav").css('background-color', 'transparent');
-            $("#nav a").css('color', 'black');
-          }
-        });
+        <ul class="footer-list">
+          <li><a href="/terms">Terms</a></li>
+          <li><a href="/privacy">Privacy policy</a></li>
+          <li><a href="/faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col">
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function () {
+      var scroll_pos = 0;
+      $(document).scroll(function () {
+        scroll_pos = $(this).scrollTop();
+        if (scroll_pos > 100) {
+          $("#nav").css('background-color', 'rgba(0, 0, 0, 0.7)');
+          $("#nav a").css('color', 'white');
+        } else {
+          $("#nav").css('background-color', 'transparent');
+          $("#nav a").css('color', 'black');
+        }
       });
-    </script>
+    });
+  </script>
 </body>
 
 </html>
