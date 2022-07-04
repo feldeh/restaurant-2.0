@@ -18,7 +18,7 @@
 
   <nav id="nav" class="navbar navbar-default navbar-expand-lg sticky-top">
     <div class="container">
-      <a class="navbar-brand fs-2" href="../index.html">Mt Foodji
+      <a class="navbar-brand fs-2" href="../index.php">Mt Foodji
         <!-- <img src="" alt=""> -->
       </a>
       <button class="navbar-toggler custom-toggler flex-end" type="button" data-bs-toggle="collapse"
@@ -27,10 +27,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <div class="navbar-nav ms-lg-auto text-center">
-          <a class="nav-item nav-link active fs-3  pt-0 " href="about.html">About</a>
-          <a class="nav-item nav-link active fs-3 pt-0 " href="menu.html">Menu</a>
-          <a class="nav-item nav-link active fs-3 pt-0 " href="gallery.html">Gallery</a>
-          <a class="nav-item nav-link active fs-3 pt-0 " href="contact.html">Contact</a>
+          <a class="nav-item nav-link active fs-3  pt-0 " href="about.php">About</a>
+          <a class="nav-item nav-link active fs-3 pt-0 " href="menu.php">Menu</a>
+          <a class="nav-item nav-link active fs-3 pt-0 " href="gallery.php">Gallery</a>
+          <a class="nav-item nav-link active fs-3 pt-0 " href="contact.php">Contact</a>
         </div>
       </div>
     </div>

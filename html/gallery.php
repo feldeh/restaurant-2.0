@@ -18,7 +18,7 @@
 
   <nav id="nav" class="navbar navbar-default navbar-expand-lg sticky-top">
     <div class="container">
-      <a class="navbar-brand fs-2" href="../index.html">Mt Foodji
+      <a class="navbar-brand fs-2" href="../index.php">Mt Foodji
         <!-- <img src="" alt=""> -->
       </a>
       <button class="navbar-toggler custom-toggler flex-end" type="button" data-bs-toggle="collapse"
@@ -27,10 +27,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <div class="navbar-nav ms-lg-auto text-center">
-          <a class="nav-item nav-link active fs-3  pt-0 " href="about.html">About</a>
-          <a class="nav-item nav-link active fs-3 pt-0 " href="menu.html">Menu</a>
-          <a class="nav-item nav-link active fs-3 pt-0 " href="gallery.html">Gallery</a>
-          <a class="nav-item nav-link active fs-3 pt-0 " href="contact.html">Contact</a>
+          <a class="nav-item nav-link active fs-3  pt-0 " href="about.php">About</a>
+          <a class="nav-item nav-link active fs-3 pt-0 " href="menu.php">Menu</a>
+          <a class="nav-item nav-link active fs-3 pt-0 " href="gallery.php">Gallery</a>
+          <a class="nav-item nav-link active fs-3 pt-0 " href="contact.php">Contact</a>
         </div>
       </div>
     </div>
@@ -42,13 +42,13 @@
   <div class="container mt-5">
     <div class="row gallery-row">
       <div class="col-lg-4 col-md-4 col-sm-3 col-xs-6 pb-2 pt2">
-        <img class="img-fluid" src="../img/img-ramen.jpg" alt="lantern">
+        <img class="img-fluid" src="../img/pexels-audrey-mari-3421920.jpg" alt="lantern">
       </div>
       <div class="col-lg-4 col-md-4 col-sm-3 col-xs-6 pb-2 pt2">
-        <img class="img-fluid" src="../img/img-ramen.jpg" alt="restaurant">
+        <img class="img-fluid" src="../img/img-restaurant1.jpg" alt="restaurant">
       </div>
       <div class="col-lg-4 col-md-4 col-sm-3 col-xs-6 pb-2 pt2">
-        <img class="img-fluid" src="../img/img-ramen.jpg" alt="sake">
+        <img class="img-fluid" src="../img/kelsen-fernandes-HObTmn27Y6Q-unsplash.jpg" alt="sake">
       </div>
       <div class="col-lg-4 col-md-4 col-sm-3 col-xs-6 pb-2 pt2">
         <img class="img-fluid" src="../img/img-ramen.jpg" alt="ramen" class="img-fluid">
@@ -68,9 +68,9 @@
         <li class="page-item disabled">
           <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
         </li>
-        <li class="page-item"><a class="page-link" href="gallery.html">1</a></li>
-        <li class="page-item"><a class="page-link" href="gallery2.html">2</a></li>
-        <li class="page-item"><a class="page-link" href="gallery3.html">3</a></li>
+        <li class="page-item"><a class="page-link" href="gallery.php">1</a></li>
+        <li class="page-item"><a class="page-link" href="gallery2.php">2</a></li>
+        <li class="page-item"><a class="page-link" href="gallery3.php">3</a></li>
         <li class="page-item">
           <a class="page-link" href="#">Next</a>
         </li>
