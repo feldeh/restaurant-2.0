@@ -51,55 +51,55 @@
       <div class="col d-flex justify-content-center">
 
       
-        <form class="rounded-3 p-5 w-75 needs-validation" novalidate>
+        <form class="rounded-3 p-5 w-75 needs-validation" action="contactform.php" method="post" novalidate>
           <h2 class="pb-2 border-bottom border-3 border-dark">Contact Us</h2>
-          <div class="row mb-3 pt-4">
-            <div class="col">
-              <label for="firstName" class="form-label">First&nbsp;name</label>
-              <input type="text" class="form-control" id="firstName" aria-describedby="firstNameHelp" required>
+          <div class="row mb-2 pt-4">
+            <div class="col mb-2">
+              <!-- <label for="firstName" class="form-label">First&nbsp;name</label> -->
+              <input type="text" name="firstName" class="form-control" id="firstName" placeholder="First name" aria-describedby="firstName_help" required>
               <div class="invalid-feedback">
                   Please provide your first name.
               </div>
             </div>
             <div class="col">
-              <label for="lastName" class="form-label">Last&nbsp;name</label>
-              <input type="text" class="form-control" id="lastName" aria-describedby="lastNameHelp" required>
+              <!-- <label for="lastName" class="form-label">Last&nbsp;name</label> -->
+              <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last name" aria-describedby="lastName_help" required>
               <div class="invalid-feedback">
                   Please provide your last name.
               </div>
             </div>
           </div>
-          <div class="mb-4">
-            <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+          <div class="mb-3">
+            <!-- <label for="mail" class="form-label">Email address</label> -->
+            <input type="mail" name="mail" class="form-control" id="mail" placeholder="Email" aria-describedby="mailHelp" required>
             <div class="invalid-feedback">
                 Please provide your email.
             </div>
           </div>
           <div class="mb-3">
-            <label for="" class="form-label">Restaurant</label>
-            <select class="form-select" id="selectRestaurant" aria-label="Default select example" required>
-                <option selected disabled value="">Please select a restaurant</option>
-                <option value="Brooklyn">Brooklyn</option>
-                <option value="Brussels">Brussels</option>
-                <option value="Berlin">Berlin</option>
+            <label for="restaurant" class="form-label">Restaurant</label>
+            <select class="form-select" name="restaurant" id="restaurant" aria-label="Default select example" required>
+                <option selected disabled value="">Select restaurant</option>
+                <option value="brooklyn">Brooklyn</option>
+                <option value="brussels">Brussels</option>
+                <option value="berlin">Berlin</option>
             </select>
           </div>
           <div class="mb-3">
-            <label for="" class="form-label">Topic</label>
-            <select class="form-select" id="selectTopic" aria-label="Default select example" required>
-                <option selected disabled value="">Please select a topic</option>
-                <option value="Reservation">Reservation</option>
-                <option value="General">General information</option>
-                <option value="Compliment">Compliment</option>
-                <option value="Complaint">Complaint</option>
+            <label for="subject" class="form-label">Subject</label>
+            <select class="form-select" name="subject" id="subject" aria-label="Default select example" required>
+                <option selected disabled value="">Select subject</option>
+                <option value="reservation">Reservation</option>
+                <option value="general">General information</option>
+                <option value="compliment">Compliment</option>
+                <option value="complaint">Complaint</option>
             </select>
           </div>
           <div class="form-floating mb-3">
-              <textarea class="form-control" id="exampleFormControlTextarea1" style="max-height: 8em;height: 8em;"></textarea required>
-              <label for="floatingTextarea2">Write your message here.</label>
+              <textarea class="form-control" name="textarea" id="exampleFormControlTextarea1" placeholder="Message" style="max-height: 8em;height: 8em;"></textarea required>
+              <!-- <label for="floatingTextarea2">Message</label> -->
           </div>
-          <button type="submit" class="btn btn-dark">Submit</button>
+          <button type="submit" name="submit" class="btn btn-dark">Submit</button>
         </form>
 
       </div>
