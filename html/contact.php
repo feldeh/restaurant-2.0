@@ -49,21 +49,23 @@
 
     <div class="row mt-5 mb-5">
       <div class="col d-flex justify-content-center">
-        <form class=" rounded-3 p-5 w-75 needs-validation" novalidate>
-          <h2 class="pb-3 border-bottom">Contact Us</h2>
+
+      
+        <form class="rounded-3 p-5 w-75 needs-validation" novalidate>
+          <h2 class="pb-2 border-bottom border-3 border-dark">Contact Us</h2>
           <div class="row mb-3 pt-4">
             <div class="col">
               <label for="firstName" class="form-label">First&nbsp;name</label>
               <input type="text" class="form-control" id="firstName" aria-describedby="firstNameHelp" required>
               <div class="invalid-feedback">
-                Please provide your first name.
+                  Please provide your first name.
               </div>
             </div>
             <div class="col">
               <label for="lastName" class="form-label">Last&nbsp;name</label>
               <input type="text" class="form-control" id="lastName" aria-describedby="lastNameHelp" required>
               <div class="invalid-feedback">
-                Please provide your last name.
+                  Please provide your last name.
               </div>
             </div>
           </div>
@@ -71,62 +73,64 @@
             <label for="email" class="form-label">Email address</label>
             <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
             <div class="invalid-feedback">
-              Please provide your email.
+                Please provide your email.
             </div>
           </div>
           <div class="mb-3">
             <label for="" class="form-label">Restaurant</label>
             <select class="form-select" id="selectRestaurant" aria-label="Default select example" required>
-              <option selected disabled value="">Please select a restaurant</option>
-              <option value="Brooklyn">Brooklyn</option>
-              <option value="Brussels">Brussels</option>
-              <option value="Berlin">Berlin</option>
+                <option selected disabled value="">Please select a restaurant</option>
+                <option value="Brooklyn">Brooklyn</option>
+                <option value="Brussels">Brussels</option>
+                <option value="Berlin">Berlin</option>
             </select>
           </div>
           <div class="mb-3">
             <label for="" class="form-label">Topic</label>
             <select class="form-select" id="selectTopic" aria-label="Default select example" required>
-              <option selected disabled value="">Please select a topic</option>
-              <option value="Reservation">Reservation</option>
-              <option value="General">General information</option>
-              <option value="Compliment">Compliment</option>
-              <option value="Complaint">Complaint</option>
+                <option selected disabled value="">Please select a topic</option>
+                <option value="Reservation">Reservation</option>
+                <option value="General">General information</option>
+                <option value="Compliment">Compliment</option>
+                <option value="Complaint">Complaint</option>
             </select>
           </div>
           <div class="form-floating mb-3">
-            <textarea class="form-control" id="exampleFormControlTextarea1" style="height: 8em;"></textarea required>
-            <label for="floatingTextarea2">Write your message here.</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" style="max-height: 8em;height: 8em;"></textarea required>
+              <label for="floatingTextarea2">Write your message here.</label>
           </div>
           <button type="submit" class="btn btn-dark">Submit</button>
         </form>
-
 
       </div>
     </div>
   </div>
 
-  <footer class="footer">
-    <div class="d-flex justify-content-center p-4 social-media">
-      <div>
-        <a target="_blank" href="https://www.facebook.com/" class="btn btn-outline-primary rounded-3 me-4">
-          <i class="fa fa-facebook-f"></i>
-        </a>
-        <a target="_blank" href="https://twitter.com/" class="btn btn-outline-primary rounded-3 me-4">
-          <i class="fa fa-twitter"></i>
-        </a>
-        <a target="_blank" href="https://www.instagram.com" class="btn btn-outline-danger rounded-3 me-4">
-          <i class="fa fa-instagram"></i>
-        </a>
-      </div>
-    </div>
-  </footer>
   
+  <div class="site-container">
+    <footer class="footer">
+      <div class="d-flex justify-content-center p-4 social-media">
+        <div>
+          <a target="_blank" href="https://www.facebook.com/" class="btn btn-outline-primary rounded-3 me-4">
+            <i class="fa fa-facebook-f"></i>
+          </a>
+          <a target="_blank" href="https://twitter.com/" class="btn btn-outline-primary rounded-3 me-4">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a target="_blank" href="https://www.instagram.com" class="btn btn-outline-danger rounded-3 me-4">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
-    <script type="text/javascript" src="../js/main.js"></script>
-  <!-- <script>
+  <script>
     $(document).ready(function () {
       var scroll_pos = 0;
       $(document).scroll(function () {
@@ -140,7 +144,8 @@
         }
       });
     });
-  </script> -->
+  </script>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>

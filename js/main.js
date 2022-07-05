@@ -32,27 +32,27 @@
       })
 
 
-const nav = document.getElementById("nav");
-const nava = document.querySelectorAll("nav a");
+// const nav = document.getElementById("nav");
+// const nava = document.querySelectorAll("nav a");
 
-function navbarScroll() {
-    var scroll_pos = 0;
-    document.scroll(function () {
-      scroll_pos = this.scrollTop();
-      console.log(scrollTop());
-      if (scroll_pos > 100) {
-        nav.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-        nava.style.color = 'white';
-      } else {
-        nav.style.backgroundColor = 'transparent';
-        nava.style.color = 'black';
-      }
-    });
-  };
+// function navbarScroll() {
+//     var scroll_pos = 0;
+//     window.scroll(function () {
+//       scroll_pos = this.scrollTop();
+//       console.log(scrollTop());
+//       if (scroll_pos > 100) {
+//         nav.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+//         nava.style.color = 'white';
+//       } else {
+//         nav.style.backgroundColor = 'transparent';
+//         nava.style.color = 'black';
+//       }
+//     });
+//   };
 
-  navbarScroll()
+//   navbarScroll()
 
-console.log('test')
+// console.log('test')
 
 
 
