@@ -28,7 +28,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <div class="navbar-nav ms-lg-auto text-center">
-                    <a class="nav-item nav-link active fs-3  pt-0 " href="about.php">About</a>
+                    <a class="nav-item nav-link active fs-3 pt-0 " href="about.php">About</a>
                     <a class="nav-item nav-link active fs-3 pt-0 " href="menu.php">Menu</a>
                     <a class="nav-item nav-link active fs-3 pt-0 " href="gallery.php">Gallery</a>
                     <a class="nav-item nav-link active fs-3 pt-0 " href="contact.php">Contact</a>
