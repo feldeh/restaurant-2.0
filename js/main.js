@@ -9,60 +9,50 @@
 
 
 
-function initMapBro() {
-    const brooklyn = { lat: 40.7183187, lng: -73.9635749 };
-    const mapBro = new google.maps.Map(document.getElementById("mapBro"), {
-        zoom: 17,
-        center: brooklyn,
-        mapId: "eee49869aea10cac",
-        disableDefaultUI: true,
+
+
+
+
+
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+  
+          form.classList.add('was-validated')
+        }, false)
+      })
+
+
+const nav = document.getElementById("nav");
+const nava = document.querySelectorAll("nav a");
+
+function navbarScroll() {
+    var scroll_pos = 0;
+    document.scroll(function () {
+      scroll_pos = this.scrollTop();
+      console.log(scrollTop());
+      if (scroll_pos > 100) {
+        nav.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+        nava.style.color = 'white';
+      } else {
+        nav.style.backgroundColor = 'transparent';
+        nava.style.color = 'black';
+      }
     });
-    const markerBro = new google.maps.Marker({
-        position: brooklyn,
-        map: mapBro,
-    });
-}
+  };
 
+  navbarScroll()
 
-function initMapBru() {
-    const brussels = { lat: 50.8454571, lng: 4.3552396 };
-    const mapBru = new google.maps.Map(document.getElementById("mapBru"), {
-        zoom: 17,
-        center: brussels,
-        mapId: "eee49869aea10cac",
-        disableDefaultUI: true,
-    });
-    const markerBru = new google.maps.Marker({
-        position: brussels,
-        map: mapBru,
-    });
-}
-
-function initMapBer() {
-    const berlin = { lat: 52.4996337, lng: 13.4184271 };
-    const mapBer = new google.maps.Map(document.getElementById("mapBer"), {
-        zoom: 17,
-        center: berlin,
-        mapId: "eee49869aea10cac",
-        disableDefaultUI: true,
-    });
-    const markerBer = new google.maps.Marker({
-        position: berlin,
-        map: mapBer,
-    });
-}
-
-function loadmaps() {
-    initMapBru();
-    initMapBro();
-    initMapBer();
-}
-
-window.loadmaps();
-
-
-
-
+console.log('test')
 
 
 

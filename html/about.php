@@ -205,7 +205,6 @@
       </footer>
 
 
-    <script src="../js/main.js"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8qWiTCW4bKb4jJ6VJ3ffOCHO7wZk6xmo&callback=loadmaps&v=weekly"
         defer></script>
@@ -216,7 +215,8 @@
         crossorigin="anonymous"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
+    <script src="../js/map.js"></script>
+
     <script>
         $(document).ready(function () {
             var scroll_pos = 0;

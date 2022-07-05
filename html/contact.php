@@ -49,36 +49,57 @@
 
     <div class="row mt-5 mb-5">
       <div class="col d-flex justify-content-center">
-        <form class=" rounded-3 p-5 w-75">
+        <form class=" rounded-3 p-5 w-75 needs-validation" novalidate>
           <h2 class="pb-3 border-bottom">Contact Us</h2>
           <div class="row mb-3 pt-4">
             <div class="col">
               <label for="firstName" class="form-label">First&nbsp;name</label>
-              <input type="text" class="form-control" id="firstName" aria-describedby="firstNameHelp">
+              <input type="text" class="form-control" id="firstName" aria-describedby="firstNameHelp" required>
+              <div class="invalid-feedback">
+                Please provide your first name.
+              </div>
             </div>
             <div class="col">
-              <label for="exampleInputPassword1" class="form-label">Last&nbsp;name</label>
-              <input type="text" class="form-control" id="lastName" aria-describedby="lastNameHelp">
+              <label for="lastName" class="form-label">Last&nbsp;name</label>
+              <input type="text" class="form-control" id="lastName" aria-describedby="lastNameHelp" required>
+              <div class="invalid-feedback">
+                Please provide your last name.
+              </div>
             </div>
           </div>
           <div class="mb-4">
-            <label for="lastName" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+            <div class="invalid-feedback">
+              Please provide your email.
+            </div>
           </div>
           <div class="mb-3">
-            <select class="form-select" id="floatingSelect" aria-label="Default select example">
-              <option selected>Reservation</option>
-              <option value="2">General information</option>
-              <option value="3">Compliment</option>
-              <option value="3">Complaint</option>
+            <label for="" class="form-label">Restaurant</label>
+            <select class="form-select" id="selectRestaurant" aria-label="Default select example" required>
+              <option selected disabled value="">Please select a restaurant</option>
+              <option value="Brooklyn">Brooklyn</option>
+              <option value="Brussels">Brussels</option>
+              <option value="Berlin">Berlin</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Topic</label>
+            <select class="form-select" id="selectTopic" aria-label="Default select example" required>
+              <option selected disabled value="">Please select a topic</option>
+              <option value="Reservation">Reservation</option>
+              <option value="General">General information</option>
+              <option value="Compliment">Compliment</option>
+              <option value="Complaint">Complaint</option>
             </select>
           </div>
           <div class="form-floating mb-3">
-            <textarea class="form-control" id="exampleFormControlTextarea1" style="height: 8em;"></textarea>
-            <label for="floatingTextarea2">Write your message here</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" style="height: 8em;"></textarea required>
+            <label for="floatingTextarea2">Write your message here.</label>
           </div>
           <button type="submit" class="btn btn-dark">Submit</button>
         </form>
+
 
       </div>
     </div>
@@ -99,13 +120,13 @@
       </div>
     </div>
   </footer>
+  
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
-  <script>
+    <script type="text/javascript" src="../js/main.js"></script>
+  <!-- <script>
     $(document).ready(function () {
       var scroll_pos = 0;
       $(document).scroll(function () {
@@ -119,7 +140,7 @@
         }
       });
     });
-  </script>
+  </script> -->
 </body>
 
 </html>
