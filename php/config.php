@@ -1,6 +1,12 @@
 <?php
 
-$dsn = "mysql:host=database;dbname=restaurant;charset=utf8mb4";
+$host = 'database';
+$dbname = 'restaurant';
+$user = 'root';
+$password = 'root';
+
+$dsn = "mysql:host=" . $host . ";dbname=" . $dbname . ";charset=utf8mb4";
+
 
 $options = [
   PDO::ATTR_EMULATE_PREPARES   => false, // Disable emulation mode for "real" prepared statements
@@ -9,8 +15,8 @@ $options = [
 ];
 
 try {
-  $pdo = new PDO($dsn, "root", "root", $options);
-  echo 'Connected to database';
+  $pdo = new PDO($dsn, $user, $password, $options);
+  echo ('Connected to database');
 } 
 catch (Exception $e) {
   error_log($e->getMessage());
