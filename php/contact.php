@@ -54,27 +54,21 @@
         <form class="rounded-3 p-5 w-75 needs-validation" action="contactform.php" method="post" novalidate>
           <h2 class="pb-2 border-bottom border-3 border-dark">Contact Us</h2>
           <div class="row mb-2 pt-4">
-            <div class="col mb-2">
-              <!-- <label for="firstName" class="form-label">First&nbsp;name</label> -->
-              <input type="text" name="firstName" class="form-control" id="firstName" placeholder="First name" aria-describedby="firstName_help" required>
+            <div class="col mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" name="name" class="form-control" id="name" aria-describedby="nameHelp" required>
               <div class="invalid-feedback">
-                  Please provide your first name.
+                  Please provide your name.
               </div>
             </div>
-            <div class="col">
-              <!-- <label for="lastName" class="form-label">Last&nbsp;name</label> -->
-              <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last name" aria-describedby="lastName_help" required>
-              <div class="invalid-feedback">
-                  Please provide your last name.
-              </div>
-            </div>
-          </div>
-          <div class="mb-3">
-            <!-- <label for="mail" class="form-label">Email address</label> -->
-            <input type="mail" name="mail" class="form-control" id="mail" placeholder="Email" aria-describedby="mailHelp" required>
+            <div class="col mb-3">
+            <label for="mail" class="form-label">Email</label>
+            <input type="mail" name="mail" class="form-control" id="mail" aria-describedby="mailHelp" required>
             <div class="invalid-feedback">
                 Please provide your email.
             </div>
+          </div>
+
           </div>
           <div class="mb-3">
             <label for="restaurant" class="form-label">Restaurant</label>
@@ -97,7 +91,7 @@
           </div>
           <div class="form-floating mb-3">
               <textarea class="form-control" name="textarea" id="exampleFormControlTextarea1" placeholder="Message" style="max-height: 8em;height: 8em;"></textarea required>
-              <!-- <label for="floatingTextarea2">Message</label> -->
+              <label for="floatingTextarea2">Message</label>
           </div>
           <button type="submit" name="submit" class="btn btn-dark">Submit</button>
         </form>
