@@ -5,7 +5,7 @@ $dbname = 'restaurant';
 $user = 'root';
 $password = 'root';
 
-$dsn = "mysql:host=" . $host . ";dbname=" . $dbname . ";charset=utf8mb4";
+$dsn = "mysql:host=" . $host . ";dbname=" . $dbname . ";charset=utf8mb4"; // dsn: data source name
 
 
 $options = [
@@ -15,8 +15,7 @@ $options = [
 ];
 
 try {
-  $pdo = new PDO($dsn, $user, $password, $options);
-  echo ('Connected to database');
+  $pdo = new PDO($dsn, $user, $password, $options); // Create a PDO instance
 } 
 catch (Exception $e) {
   error_log($e->getMessage());
