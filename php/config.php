@@ -1,11 +1,8 @@
 <?php
 
-$host = 'database';
-$dbname = 'restaurant';
-$user = 'root';
-$password = 'root';
+include_once('sql_server.php');
 
-$dsn = "mysql:host=" . $host . ";dbname=" . $dbname . ";charset=utf8mb4"; // dsn: data source name
+$dsn = "mysql:host=" . $host . ";dbname=" . $dbname . ";charset=utf8mb4"; // Set DSN data source name
 
 
 $options = [
