@@ -9,16 +9,16 @@
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body
-  style="background-image: url(../img/img-fudji4.png); position: relative; background-attachment: fixed; background-size: cover;">
+  style="background-image: url(./img/img-fudji4.png); position: relative; background-attachment: fixed; background-size: cover;">
 
 
   <nav id="nav" class="navbar navbar-default navbar-expand-lg sticky-top">
     <div class="container">
-      <a class="navbar-brand fs-2" href="../index.php">Mt Foodji
+      <a class="navbar-brand fs-2" href="./index.php">Mt Foodji
         <!-- <img src="" alt=""> -->
       </a>
       <button class="navbar-toggler custom-toggler flex-end" type="button" data-bs-toggle="collapse"

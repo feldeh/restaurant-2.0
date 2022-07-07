@@ -9,16 +9,16 @@
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body
-  style="background-image: url(../img/img-fudji4.png); position: relative; background-attachment: fixed; background-size: cover;">
+  style="background-image: url(./img/img-fudji4.png); position: relative; background-attachment: fixed; background-size: cover;">
 
 
   <nav id="nav" class="navbar navbar-default navbar-expand-lg sticky-top">
     <div class="container">
-      <a class="navbar-brand fs-2" href="../index.php">Mt Foodji
+      <a class="navbar-brand fs-2" href="./index.php">Mt Foodji
         <!-- <img src="" alt=""> -->
       </a>
       <button class="navbar-toggler custom-toggler flex-end" type="button" data-bs-toggle="collapse"
@@ -42,22 +42,22 @@
   <div class="container mt-5">
     <div class="row gallery-row">
       <div class="col-lg-4 col-md-4 col-sm-3 col-xs-6 pb-2 pt2">
-        <img class="img-fluid" src="../img/img-ramen.jpg" alt="lantern">
+        <img class="img-fluid" src="./img/pexels-audrey-mari-3421920.jpg" alt="lantern">
       </div>
       <div class="col-lg-4 col-md-4 col-sm-3 col-xs-6 pb-2 pt2">
-        <img class="img-fluid" src="../img/dale-scogings-_SBsVi4kmkY-unsplash.jpg" alt="restaurant">
+        <img class="img-fluid" src="./img/img-restaurant1.jpg" alt="restaurant">
       </div>
       <div class="col-lg-4 col-md-4 col-sm-3 col-xs-6 pb-2 pt2">
-        <img class="img-fluid" src="../img/pexels-audrey-mari-3421920-resize.png" alt="sake">
+        <img class="img-fluid" src="./img/kelsen-fernandes-HObTmn27Y6Q-unsplash.jpg" alt="sake">
       </div>
       <div class="col-lg-4 col-md-4 col-sm-3 col-xs-6 pb-2 pt2">
-        <img class="img-fluid" src="../img/img-ramen.jpg" alt="ramen" class="img-fluid">
+        <img class="img-fluid" src="./img/img-ramen.jpg" alt="ramen" class="img-fluid">
       </div>
       <div class="col-lg-4 col-md-4 col-sm-3 col-xs-6 pb-2 pt2">
-        <img class="img-fluid" src="../img/img-ramen.jpg" alt="ramen" class="img-fluid">
+        <img class="img-fluid" src="./img/img-ramen.jpg" alt="ramen" class="img-fluid">
       </div>
       <div class="col-lg-4 col-md-4 col-sm-3 col-xs-6 pb-2 pt2">
-        <img class="img-fluid" src="../img/img-ramen.jpg" alt="ramen" class="img-fluid">
+        <img class="img-fluid" src="./img/img-ramen.jpg" alt="ramen" class="img-fluid">
       </div>
 
     </div>

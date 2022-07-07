@@ -13,12 +13,12 @@
 </head>
 
 <body
-    style="background-image: url(../img/img-fudji4.png); position: relative; background-attachment: fixed; background-size: cover;">
+    style="background-image: url(./img/img-fudji4.png); position: relative; background-attachment: fixed; background-size: cover;">
 
 
     <nav id="nav" class="navbar navbar-default navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand fs-2" href="../index.php">Mt Foodji
+            <a class="navbar-brand fs-2" href="./index.php">Mt Foodji
                 <!-- <img src="" alt=""> -->
             </a>
             <button class="navbar-toggler custom-toggler flex-end" type="button" data-bs-toggle="collapse"
@@ -51,7 +51,7 @@
 
         <div class="row m-5">
             <div class="col-lg mb-4">
-                <img class="img-fluid" src="../img/nakamoto-resize.jpg" alt="nakamoto">
+                <img class="img-fluid" src="./img/nakamoto-resize.jpg" alt="nakamoto">
             </div>
             <div class="col-lg-5 ">
                 <h1>Satoshi Nakamoto</h1>

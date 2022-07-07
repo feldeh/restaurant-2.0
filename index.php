@@ -30,10 +30,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <div class="navbar-nav ms-md-auto text-center">
-          <a class="nav-item nav-link active fs-3  pt-0 " href="php/about.php">About</a>
-          <a class="nav-item nav-link active fs-3 pt-0 " href="php/menu.php">Menu</a>
-          <a class="nav-item nav-link active fs-3 pt-0 " href="php/gallery.php">Gallery</a>
-          <a class="nav-item nav-link active fs-3 pt-0 " href="php/contact.php">Contact</a>
+          <a class="nav-item nav-link active fs-3  pt-0 " href="about.php">About</a>
+          <a class="nav-item nav-link active fs-3 pt-0 " href="menu.php">Menu</a>
+          <a class="nav-item nav-link active fs-3 pt-0 " href="gallery.php">Gallery</a>
+          <a class="nav-item nav-link active fs-3 pt-0 " href="contact.php">Contact</a>
         </div>
       </div>
     </div>
