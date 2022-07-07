@@ -1,6 +1,6 @@
 <?php
 
-include_once('sql_server.php');
+include __DIR__ . '/sql_server.php';
 
 $dsn = 'mysql:host=' . $host . ';dbname=' . $dbname . ';charset=utf8mb4'; // Set DSN data source name
 
