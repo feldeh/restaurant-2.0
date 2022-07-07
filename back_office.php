@@ -13,9 +13,37 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
+<style>
+    th,
+    td {
+        word-wrap: break-word;
+    }
+
+    table {
+        width: 100%;
+        min-width: 670px;
+        table-layout: fixed;
+        font-size: 14px;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    tr > :first-child  {
+        width: 2.2rem;
+    }
+
+    tr > :last-child {
+        width: 3.8rem;
+    }
+
+    tr > :nth-child(2), tr > :nth-child(3), tr > :nth-child(4), tr > :nth-child(5), tr > :nth-child(6) {
+        width: 5.8rem;
+    }
+
+
+</style>
 
 <body>
-    <div style="background-image: url(./img/img-fudji4.png); position: relative; background-attachment: fixed; background-size: cover; overflow:clip">
+    <div style="background-image: url(./img/img-fudji4.png); position: relative; background-attachment: fixed; background-size: cover; overflow:auto">
         <?php
         include __DIR__ . '/php/config.php';
         include __DIR__ . '../../helpers.php';
@@ -49,9 +77,9 @@
             </div>
         </nav>
 
-        <div class="container p-5 w-75">
+        <div class="p-2">
             <h2 class="text-center mb-4">Contacts</h2>
-            <table class="table table-striped table-hover table-bordered" cellspacing="0" cellpadding="0" style="font-size: 14px; background-color: rgba(255, 255, 255, 0.5);">
+            <table class="table table-striped table-hover table-bordered table-responsive " cellspacing="0">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -94,12 +122,12 @@
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-body">
-                                                <p>etes vous sur de vouloir supprimer cette etudiant ?</p>
+                                                <h5>Do you want to delete this contact?</h5>
                                             </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Annuler</button>
+                                            <div class="modal-footer justify-content-center">
+                                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancel</button>
                                                 <a href="./php/delete.php?id=<?php echo $row['contact_id']; ?>">
-                                                    <button class="btn btn-danger" type="button">Confirmer</button>
+                                                    <button class="btn btn-danger" type="button">Confirm</button>
                                                 </a>
                                             </div>
                                         </div>
