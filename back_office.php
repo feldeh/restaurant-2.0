@@ -14,10 +14,7 @@
 </head>
 
 <style>
-    th,
-    td {
-        word-wrap: break-word;
-    }
+
 
     table {
         width: 100%;
@@ -25,6 +22,11 @@
         table-layout: fixed;
         font-size: 14px;
         background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    th,
+    td {
+        word-wrap: break-word;
     }
 
     tr > :first-child  {
@@ -38,7 +40,10 @@
     tr > :nth-child(2), tr > :nth-child(3), tr > :nth-child(4), tr > :nth-child(5), tr > :nth-child(6) {
         width: 5.8rem;
     }
-
+    
+thead {
+    position: sticky;
+}
 
 </style>
 
@@ -79,9 +84,9 @@
 
         <div class="p-2">
             <h2 class="text-center mb-4">Contacts</h2>
-            <table class="table table-striped table-hover table-bordered table-responsive " cellspacing="0">
+            <table class="table table-striped table-hover table-bordered ">
                 <thead>
-                    <tr>
+                    <tr class="sticky-top">
                         <th>ID</th>
                         <th>Date</th>
                         <th>Name</th>
