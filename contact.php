@@ -11,93 +11,94 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body style="background-image: url(./img/img-fudji4.png); position: relative; background-attachment: fixed; background-size: cover;">
+<body>
 
+  <div style="background-image: url(./img/img-fudji4.png); position: relative; background-attachment: fixed; background-size: cover; overflow:clip">
 
-  <nav id="nav" class="navbar navbar-default navbar-expand-lg sticky-top">
-    <div class="container">
-      <a class="navbar-brand fs-2" href="./index.php">Mt Foodji
-        <!-- <img src="" alt=""> -->
-      </a>
-      <button class="navbar-toggler custom-toggler flex-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <div class="navbar-nav ms-lg-auto text-center">
-          <a class="nav-item nav-link active fs-3  pt-0 " href="about.php">About</a>
-          <a class="nav-item nav-link active fs-3 pt-0 " href="menu.php">Menu</a>
-          <a class="nav-item nav-link active fs-3 pt-0 " href="gallery.php">Gallery</a>
-          <a class="nav-item nav-link active fs-3 pt-0 " href="contact.php">Contact</a>
+    <nav id="nav" class="navbar navbar-default navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand fs-2" href="./index.php">Mt Foodji
+          <!-- <img src="" alt=""> -->
+        </a>
+        <button class="navbar-toggler custom-toggler flex-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <div class="navbar-nav ms-lg-auto text-center">
+            <a class="nav-item nav-link active fs-3  pt-0 " href="about.php">About</a>
+            <a class="nav-item nav-link active fs-3 pt-0 " href="menu.php">Menu</a>
+            <a class="nav-item nav-link active fs-3 pt-0 " href="gallery.php">Gallery</a>
+            <a class="nav-item nav-link active fs-3 pt-0 " href="contact.php">Contact</a>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
 
 
-  <div class="container" style="height: 100vh;">
+    <div class="container" style="height: 100vh;">
 
-    <div class="row ">
-      <div class="col text-center">
-        <h1></h1>
+      <div class="row ">
+        <div class="col text-center">
+          <h1></h1>
+        </div>
       </div>
-    </div>
 
 
-    <div class="row mt-5 mb-5">
-      <div class="col d-flex justify-content-center">
+      <div class="row mt-5 mb-5">
+        <div class="col d-flex justify-content-center">
 
 
-        <form class="rounded-3 p-5 w-75 needs-validation" action="contactform.php" method="post" novalidate>
-          <h2 class="pb-2 border-bottom border-3 border-dark">Contact Us</h2>
-          <div class="row mb-2 pt-4">
+          <form class="rounded-3 p-5 w-75 needs-validation" action="./php/contactform.php" method="post" novalidate>
+            <h2 class="pb-2 border-bottom border-3 border-dark">Contact Us</h2>
+            <div class="row mb-2 pt-4">
 
 
-            <div class="col mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" name="name" class="form-control" id="name" aria-describedby="nameHelp" required>
-              <div class="invalid-feedback">
-                Please provide your name.
+              <div class="col mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" id="name" aria-describedby="nameHelp" required>
+                <div class="invalid-feedback">
+                  Please provide your name.
+                </div>
               </div>
+
+
+              <div class="col mb-3">
+                <label for="mail" class="form-label">Email</label>
+                <input type="mail" name="mail" class="form-control" id="mail" aria-describedby="mailHelp" required>
+                <div class="invalid-feedback">
+                  Please provide your email.
+                </div>
+              </div>
+
             </div>
 
 
-            <div class="col mb-3">
-              <label for="mail" class="form-label">Email</label>
-              <input type="mail" name="mail" class="form-control" id="mail" aria-describedby="mailHelp" required>
-              <div class="invalid-feedback">
-                Please provide your email.
-              </div>
+            <div class="mb-3">
+              <label for="restaurant" class="form-label">Restaurant</label>
+              <select class="form-select" name="restaurant" id="restaurant" aria-label="Default select example" required>
+                <option selected disabled value="">Select restaurant</option>
+                <option value="brooklyn">Brooklyn</option>
+                <option value="brussels">Brussels</option>
+                <option value="berlin">Berlin</option>
+              </select>
             </div>
 
-          </div>
+
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <select class="form-select" name="subject" id="subject" aria-label="Default select example" required>
+                <option selected disabled value="">Select subject</option>
+                <option value="reservation">Reservation</option>
+                <option value="general">General information</option>
+                <option value="compliment">Compliment</option>
+                <option value="complaint">Complaint</option>
+              </select>
+            </div>
 
 
-          <div class="mb-3">
-            <label for="restaurant" class="form-label">Restaurant</label>
-            <select class="form-select" name="restaurant" id="restaurant" aria-label="Default select example" required>
-              <option selected disabled value="">Select restaurant</option>
-              <option value="brooklyn">Brooklyn</option>
-              <option value="brussels">Brussels</option>
-              <option value="berlin">Berlin</option>
-            </select>
-          </div>
-
-
-          <div class="mb-3">
-            <label for="subject" class="form-label">Subject</label>
-            <select class="form-select" name="subject" id="subject" aria-label="Default select example" required>
-              <option selected disabled value="">Select subject</option>
-              <option value="reservation">Reservation</option>
-              <option value="general">General information</option>
-              <option value="compliment">Compliment</option>
-              <option value="complaint">Complaint</option>
-            </select>
-          </div>
-
-
-          <div class="form-floating mb-3">
-            <textarea class="form-control" name="message" id="exampleFormControlTextarea1" placeholder="Message" style="max-height: 8em;height: 8em;"></textarea required>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" name="message" id="exampleFormControlTextarea1" placeholder="Message" style="max-height: 8em;height: 8em;"></textarea required>
               <label for="floatingTextarea2">Message</label>
           </div>
 
@@ -127,6 +128,8 @@
       </div>
     </footer>
   </div>
+
+</div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 

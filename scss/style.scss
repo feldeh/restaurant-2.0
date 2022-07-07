@@ -3,6 +3,8 @@
 
 body {
   font-family: "Lato", sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .jumbotron {
@@ -11,11 +13,9 @@ body {
 }
 
 
-
 header.hero {
   height: 100vh;
 }
-
 
 
 
@@ -139,3 +139,5 @@ form {
 .footer {
   background-color: #000000;
 }
+
+

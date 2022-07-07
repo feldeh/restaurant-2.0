@@ -11,9 +11,6 @@ require __DIR__ . '/config.php';
     $row = $stmt->fetch();
 
 
-	// $res = mysqli_query($con, $selSql);
-	// $r = mysqli_fetch_assoc($res);
-
 	if (isset($_POST) & !empty($_POST)) {
 		$name = ($_POST['name']);
 		$mail = ($_POST['mail']);
@@ -21,14 +18,16 @@ require __DIR__ . '/config.php';
 		$subject = $_POST['subject'];
 		$message = $_POST['message'];
 
-		$sql = "UPDATE contacts SET name=?,	mail=?, restaurant=?, subject=?, message= WHERE id=$id ";
 
-		$res = mysqli_query($con, $UpdateSql);
-		if ($res) {
-			header("location: ../back_office.php");
-		}else{
-			$erreur = "la mise à jour a échoué.";
-		}
+		$sql = "UPDATE contacts SET contact_name = ?, contact_mail = ?, restaurant = ?, subject = ?, message = ? WHERE contact_id = ?";
+
+		$stmt = $pdo->prepare($sql);
+
+		$stmt->execute([$name, $mail, $restaurant, $subject, $message, $id]);
+
+
+		header("location: ../back_office.php");
+
 	}
 
  ?>
@@ -47,27 +46,10 @@ require __DIR__ . '/config.php';
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body style="background-image: url(./img/img-fudji4.png); position: relative; background-attachment: fixed; background-size: cover;">
+<body style="background-image: url(../img/img-fudji4.png); position: relative; background-attachment: fixed; background-size: cover;">
 
 
-  <nav id="nav" class="navbar navbar-default navbar-expand-lg sticky-top">
-    <div class="container">
-      <a class="navbar-brand fs-2" href="./index.php">Mt Foodji
-        <!-- <img src="" alt=""> -->
-      </a>
-      <button class="navbar-toggler custom-toggler flex-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <div class="navbar-nav ms-lg-auto text-center">
-          <a class="nav-item nav-link active fs-3  pt-0 " href="about.php">About</a>
-          <a class="nav-item nav-link active fs-3 pt-0 " href="menu.php">Menu</a>
-          <a class="nav-item nav-link active fs-3 pt-0 " href="gallery.php">Gallery</a>
-          <a class="nav-item nav-link active fs-3 pt-0 " href="contact.php">Contact</a>
-        </div>
-      </div>
-    </div>
-  </nav>
+
 
 
 
@@ -84,8 +66,8 @@ require __DIR__ . '/config.php';
       <div class="col d-flex justify-content-center">
 
 
-        <form class="rounded-3 p-5 w-75 needs-validation" action="contactform.php" method="post" novalidate>
-          <h2 class="pb-2 border-bottom border-3 border-dark">Contact Us</h2>
+        <form class="rounded-3 p-5 w-75 needs-validation" action="" method="post" novalidate>
+          <h2 class="pb-2 border-bottom border-3 border-dark">Edit contact</h2>
           <div class="row mb-2 pt-4">
 
 
@@ -164,27 +146,7 @@ require __DIR__ . '/config.php';
     </footer>
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
-  <script>
-    $(document).ready(function () {
-      var scroll_pos = 0;
-      $(document).scroll(function () {
-        scroll_pos = $(this).scrollTop();
-        if (scroll_pos > 100) {
-          $("#nav").css('background-color', 'rgba(0, 0, 0, 0.8)');
-          $("#nav a").css('color', 'white');
-        } else {
-          $("#nav").css('background-color', 'transparent');
-          $("#nav a").css('color', 'black');
-        }
-      });
-    });
-  </script>
-  <script src="./js/main.js"></script>
 </body>
 
 </html>
