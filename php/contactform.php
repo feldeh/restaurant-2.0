@@ -19,17 +19,13 @@ if (isset($_POST['submit'])) {
 
     $stmt->execute([$date, $name, $mail, $restaurant, $subject, $message]); // Filling placeholders with the variables (order sensitive)
 
-    if ($stmt->rowCount()) {
-        echo 'The form was submitted!';
-    }
+    header('Location: ../contact.php');
+
+    // if ($stmt->rowCount()) {
+    //     echo 'The form was submitted!';
+    // }
 
 
 }
 
 # PDO QUERY
-
-
-
-
-
-?>
