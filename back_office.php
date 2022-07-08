@@ -30,7 +30,7 @@
     }
 
     tr > :first-child  {
-        width: 2.2rem;
+        width: 2.1rem;
     }
 
     tr > :last-child {
