@@ -106,9 +106,7 @@
 
                                 <!-- Edit button -->
 
-                                <!-- <a href="./php/edit.php?id=<?php echo $row['contact_id']; ?>" class="m-2">
-                                    <i class="fa fa-edit fa-2x"></i>
-                                </a> -->
+
 
                                 <div>
 
@@ -177,16 +175,18 @@
                                                         <label for="floatingTextarea2">Message</label>
                                                     </div>
 
+                                                    <div class="modal-footer justify-content-center">
+                                                        
+                                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+
+                                                    <button type="submit" name="submit" class="btn btn-primary">Save</button>
+                                                    </div>
+
+
                                                 </form>
 
                                             </div>
-                                            <div class="modal-footer justify-content-center">
 
-                                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
-
-                                                <button type="submit" name="submit" class="btn btn-primary">Save</button>
-
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
