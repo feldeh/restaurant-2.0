@@ -7,7 +7,7 @@ include_once __DIR__ . '/config.php';
 if (isset($_POST['submit'])) {
 
     date_default_timezone_set('CET');
-    $date = date('Y-m-d H:i:s');
+    $date = date('Y-m-d H:i');
     $name = filter_var($_POST['name'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $mail = filter_var($_POST['mail'], FILTER_SANITIZE_EMAIL);
     $restaurant = filter_var($_POST['restaurant'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
