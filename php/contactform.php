@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
 
     $stmt->execute([$date, $name, $mail, $restaurant, $subject, $message]); // Filling placeholders with the variables (order sensitive)
 
-    header('Location: ../contact.php');
+    header('Location: ../contact.php?status=success');
 
     // if ($stmt->rowCount()) {
     //     echo 'The form was submitted!';
