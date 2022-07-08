@@ -123,7 +123,7 @@
 
 
                                                 <form class="rounded-3 p-2 needs-validation" action="./php/edit.php?id=<?php echo $row['contact_id']; ?>" method="post" novalidate>
-                                                    <h2 class="pb-2 border-bottom border-3 border-dark">Edit contact</h2>
+                                                    <h4 class="pb-2 border-bottom border-2 border-dark">Edit contact</h4>
                                                     <div class="row mb-2 pt-4">
 
 
@@ -201,8 +201,8 @@
                                 <div class="modal fade" id="delete-modal<?php echo $row['contact_id']; ?>" role="dialog">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
-                                            <div class="modal-body">
-                                                <h5>Do you want to delete this contact?</h5>
+                                            <div class="modal-body text-center">
+                                                <h4>Do you want to delete this contact?</h4>
                                             </div>
                                             <div class="modal-footer justify-content-center">
                                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
