@@ -31,6 +31,7 @@
             <a class="nav-item nav-link active fs-3 pt-0 " href="menu.php">Menu</a>
             <a class="nav-item nav-link active fs-3 pt-0 " href="gallery.php">Gallery</a>
             <a class="nav-item nav-link active fs-3 pt-0 " href="contact.php">Contact</a>
+            <a class="nav-item nav-link active fs-3 pt-0 " href="back_office.php">Admin</a>
           </div>
         </div>
       </div>
