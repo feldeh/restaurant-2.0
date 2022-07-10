@@ -18,7 +18,6 @@
     <nav id="nav" class="navbar navbar-default navbar-expand-lg sticky-top">
       <div class="container">
         <a class="navbar-brand fs-2" href="./index.php">Mt Foodji
-          <!-- <img src="" alt=""> -->
         </a>
         <button class="navbar-toggler custom-toggler flex-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -51,14 +50,9 @@
 
           <form class="rounded-3 p-5 w-75 needs-validation" action="./php/contactform.php" method="post" novalidate>
 
-
-
+          <!-- Submit success alert -->
           <?php
-
           if (isset($_GET['status'])): 
-
-
-
             echo 
             '            
               <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -71,21 +65,15 @@
               
               <small>Contact request submitted!</small>
               </div>
-
             ';
-
           endif;
           ?>
-
-
 
             <h2 class="pb-2 border-bottom border-3 border-dark">Contact Us</h2>
             
             <div class="row mb-2 pt-4">
 
             
-
-
               <div class="col mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" name="name" class="form-control" id="name" aria-describedby="nameHelp" required>
