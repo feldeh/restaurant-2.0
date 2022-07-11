@@ -14,6 +14,10 @@ if (isset($_POST['submit'])) {
     $subject = filter_var($_POST['subject'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $message = filter_var($_POST['message'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
+    // if ($subject == 'reservation') {
+    //     $stmt = $pdo->prepare('INSERT INTO contacts (contact_date, contact_name, contact_mail, restaurant, subject,  message) VALUES(?, ?, ?, ?, ?, ?)');
+    // }
+
     // Prepares an SQL statement to be executed and returns a statement object 
     $stmt = $pdo->prepare('INSERT INTO contacts (contact_date, contact_name, contact_mail, restaurant, subject,  message) VALUES(?, ?, ?, ?, ?, ?)'); // For security reasons, variables cannot appear in the sql command. Always separate the instruction from the data | '?' are placeholders
 
