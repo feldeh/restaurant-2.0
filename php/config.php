@@ -15,8 +15,5 @@ try {
   $pdo = new PDO($dsn, $user, $password, $options); // Create a PDO instance
 } 
 catch (Exception $e) {
-  error_log($e->getMessage());
-  exit('Something bad happened'); 
+  print "Error: " . $e->getMessage();
 }
-
-?>
