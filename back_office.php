@@ -16,7 +16,9 @@
 <style>
     table {
         width: 100%;
+        height: 100%;
         min-width: 670px;
+        min-height: 100%;
         table-layout: fixed;
         font-size: 14px;
         background-color: rgba(255, 255, 255, 0.5);
@@ -49,7 +51,7 @@
 </style>
 
 <body>
-    <div style="background-image: url(./img/img-fudji4.png); position: relative; background-attachment: fixed; background-size: cover; overflow:auto">
+    <div style="background-image: url(./img/img-fudji4.png); height: 100vh; position: relative; background-attachment: fixed; background-size: cover; overflow:auto">
         <?php
         include __DIR__ . '/php/config.php';
         include __DIR__ . '../../helpers.php';
